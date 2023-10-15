@@ -2,7 +2,7 @@ package com.right2Vote;
 
 public class CombinationFindingClass {
 	public static void main(String[] args) {
-//		GIVEN:
+//	GIVEN:
         double amount = 600.00;
         double priceOfTShirt = 50.00;
         double priceOfJeans = 80.00;
