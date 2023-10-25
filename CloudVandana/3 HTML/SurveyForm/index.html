@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="surveyForm.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div>
+        <div id="head">
+            <h1>Customer Survey Form</h1>
+        </div>
+        <div class="form-container">
+            <form id="survey-form" onsubmit="return false">
+                <div>
+                    <label for="first-name">First Name:</label>
+                    <div>
+                        <input type="text" id="first-name" required><br><br>
+                    </div>
+                </div>
+                <div>
+                    <label for="last-name">Last Name:</label>
+                <div>
+                    <input type="text" id="last-name" required><br><br>
+                </div>
+                </div>
+               <div>
+                <label for="dob">Date of Birth:</label>
+                <div>
+                    <input type="date" id="dob" required><br><br>
+                </div>
+               </div>
+               <div>
+                <label for="country">Country:</label>
+                <div>
+                    <select id="country" required>
+                        <option value="">Select a country</option>
+                        <option value="India">India</option>
+                        <option value="New Zealand">New Zealand</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="Canada">Canada</option>
+                    </select><br><br>
+                </div>
+               </div>
+               <div>
+                <label id="gender">Gender:</label>
+                <div>
+                    <input type="radio" id="male" value="male" name="gender" checked onclick="genderSelection()">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" value="female" name="gender"            onclick="genderSelection()">
+                    <label for="female">Female</label><br><br>
+                </div>
+               </div>
+               
+                <div>
+                    <label for="profession">Profession:</label>
+                    <div>
+                        <input type="text" id="profession" required><br><br>
+                    </div>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <div>
+                        <input type="email" id="email" required><br><br>
+                    </div>
+                </div>
+                <div>
+                    <label for="mobile">Mobile Number:</label>
+                    <div>
+                        <input type="tel" id="mobile" required><br><br>
+                    </div>
+                </div>
+                <div>
+                    <button onclick="submitForm()">Submit</button>
+                <button type="reset">Reset</button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+
+    
+</body>
+<script src="surveyForm.js"></script>
+</html>
